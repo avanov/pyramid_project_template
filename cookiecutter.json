@@ -1,6 +1,6 @@
 {
-    "project_name": "Complexity",
-    "project_description": "Pyramid app",
+    "project_name": "myproject",
+    "project_description": "Short description",
     "project_url": "https://github.com/avanov",
     "project_version": "0.0.1",
     "author": "Maxim Avanov",
