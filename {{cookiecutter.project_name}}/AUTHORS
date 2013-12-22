@@ -1,0 +1,4 @@
+{{ cookiecutter.project_name }} was created by {{ cookiecutter.author }}.
+
+- `GitHub profile <https://github.com/avanov>`_
+- `Google+ profile <https://google.com/+MaximAvanov>`_

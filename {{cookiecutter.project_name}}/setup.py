@@ -11,9 +11,6 @@ here = lambda path: os.path.join(os.path.abspath(os.path.dirname(__file__)), pat
 with open(here('README.rst')) as f:
     README = f.read()
 
-with open(here('CHANGES.txt')) as f:
-    CHANGES = f.read()
-
 with open(here('requirements.txt')) as f:
     rows = f.read().strip().split('\n')
     requires = []
@@ -50,7 +47,7 @@ class PyTest(TestCommand):
 setup(name='{{ cookiecutter.project_name }}',
       version='{{ cookiecutter.project_version }}',
       description='{{ cookiecutter.project_description }}',
-      long_description=README + '\n\n' + CHANGES,
+      long_description=README,
       classifiers=[
           'Development Status :: 1 - Planning',
           'Environment :: Web Environment',
@@ -79,10 +76,7 @@ setup(name='{{ cookiecutter.project_name }}',
       },
       entry_points={
           'paste.app_factory': [
-              'main = pacific:main'
-          ],
-          'console_scripts': [
-              'pacific = pacific.cli:main'
+              'main = {{ cookiecutter.project_name }}:main'
           ],
           'babel.extractors': [
               'plim = plim.adapters.babelplugin:extract'
