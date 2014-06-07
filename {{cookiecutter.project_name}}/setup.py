@@ -25,8 +25,6 @@ with open(here('requirements.txt')) as f:
 # Integrate py.test with setup.py:
 # http://pytest.org/latest/goodpractises.html#integration-with-setuptools-test-commands
 
-
-
 class PyTest(TestCommand):
 
     def finalize_options(self):
