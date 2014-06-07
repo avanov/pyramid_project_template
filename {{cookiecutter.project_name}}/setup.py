@@ -74,10 +74,13 @@ setup(name='{{ cookiecutter.project_name }}',
       },
       entry_points={
           'paste.app_factory': [
-              'main = {{ cookiecutter.project_name }}:main'
+              'main = {{ cookiecutter.project_name }}:main',
           ],
           'babel.extractors': [
-              'plim = plim.adapters.babelplugin:extract'
-          ]
+              'plim = plim.adapters.babelplugin:extract',
+          ],
+          'console_scripts': [
+              'initialize_{{ cookiecutter.project_name }}_db = {{ cookiecutter.project_name }}.scripts.initializedb:main',
+          ],
       }
     )

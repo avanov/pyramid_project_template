@@ -1,2 +1,9 @@
 Pyramid==1.5.1
+pyramid_chameleon
+pyramid_debugtoolbar
+pyramid_tm
+SQLAlchemy
+transaction
+zope.sqlalchemy
+waitress
 Plim>=0.9.11
