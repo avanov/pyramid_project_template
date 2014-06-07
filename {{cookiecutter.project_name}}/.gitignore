@@ -23,3 +23,6 @@ docs/_build
 
 # Compass/Sass cache
 .sass-cache/
+
+# Sqlite databases
+*.sqlite
